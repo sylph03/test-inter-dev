@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+
+  --animate-slideUp: slideUp 1.2s ease-out forwards;
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  --animate-fadeUp: fadeUp 0.8s ease-out forwards;
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  --animate-fadeIn: fadeIn 0.6s ease forwards;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: "scale(0.5)"
+    }
+    100% {
+      opacity: 1;
+      transform: "scale(1)"
+    }
+  }
+}
+
+/* Base resets that work well with Tailwind layouts */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11.9px;
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+  width: 8px; /* Độ rộng thanh cuộn */
+  height: 8px; /* Dùng cho cuộn ngang */
+}
+
+/* Thanh cuộn - nền */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(224 242 254); /* Màu nền thanh cuộn */
+}
+
+/* Thanh cuộn - phần kéo */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(125 211 252); /* Màu phần kéo */
+}
+
+/* Hiệu ứng hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background: rgb(56 189 248);
+}
