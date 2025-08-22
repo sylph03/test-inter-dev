@@ -32,6 +32,22 @@
       transform: "scale(1)"
     }
   }
+
+--animate-expandCircle: expandCircle 2s ease fowards;
+@keyframes expandCircle {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(50); /* mở rộng toàn màn hình */
+    opacity: 0;
+  }
+}
 }
 
 /* Base resets that work well with Tailwind layouts */

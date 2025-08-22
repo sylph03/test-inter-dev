@@ -72,10 +72,12 @@ export default function Mission() {
   const [marginTop, setMarginTop] = useState(0);
 
   useEffect(() => {
-  if (window.innerWidth >= 1280 && imageHeight > 0) {
-    setMarginTop(-imageHeight);
-  }
-}, [imageHeight]);
+    if (window.innerWidth >= 1280 && imageHeight > 0) {
+      setMarginTop(-imageHeight);
+    } else {
+      setMarginTop(0);
+    }
+  }, [imageHeight]);
 
   useEffect(() => {
     if (imageRef.current) {

@@ -272,7 +272,7 @@ export default function Invesment() {
 
   return (
     <section> 
-      <div className="relative w-full h-[1084px] xl:h-[850px] overflow-hidden mb-[60px] xl:mb-[133px]">
+      <div className="relative w-full h-[1084px] xl:h-[850px] overflow-hidden mb-[60px] xl:mb-0">
         {/* Text Content */}
         <div className="flex flex-col pl-[10px] xl:pl-[101px] pt-0 xl:pt-[104px]">
           {/* Company name */}

@@ -1,6 +1,38 @@
+import { useState, useEffect, useRef } from "react";
+
 export default function About() {
+
+  const aboutref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(aboutref.current); // chỉ trigger 1 lần
+        }
+      },
+      {
+        threshold: 0.5, 
+      }
+    );
+
+    if (aboutref.current) {
+      observer.observe(aboutref.current);
+    }
+
+    return () => {
+      if (aboutref.current) observer.unobserve(aboutref.current);
+    };
+  }, []);
+
   return (
-    <section className="h-[1093.207px] xl:h-[1014px] w-full bg-white shadow-[0_4px_4px_rgba(0,0,0,0.25)] bg-[linear-gradient(110deg,rgba(47,46,121,0.20)_10.86%,rgba(0,0,0,0)_47.66%),url('/path-to-image'),linear-gradient(4deg,#7E9EC7_46.7%,#79A4D3_97.79%)] bg-no-repeat bg-cover">
+    <section
+      ref={aboutref}
+      className={`h-[1093.207px] xl:h-[1014px] w-full bg-white shadow-[0_4px_4px_rgba(0,0,0,0.25)] ${visible ? "animate-fadeUp" : "opacity-0"}
+      bg-[linear-gradient(110deg,rgba(47,46,121,0.20)_10.86%,rgba(0,0,0,0)_47.66%),url('/path-to-image'),linear-gradient(4deg,#7E9EC7_46.7%,#79A4D3_97.79%)] bg-no-repeat bg-cover`}
+      >
       <div className="relative w-full h-full">
         {/* Ảnh nền */}
         <div className="bg-[url('/Image.png')] bg-cover bg-end bg-center xl:bg-center w-full h-full xl:bg-[url('/image400.png')]">
