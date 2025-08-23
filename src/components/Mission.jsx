@@ -66,21 +66,7 @@ const data = [
 export default function Mission() {
 
   const imageRef = useRef(null);
-  const [imageHeight, setImageHeight] = useState(0);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
-
-  useEffect(() => {
-    if (imageRef.current) {
-      const updateHeight = () => {
-        setImageHeight(imageRef.current.clientHeight);
-      };
-      
-      updateHeight();
-      window.addEventListener('resize', updateHeight);
-      
-      return () => window.removeEventListener('resize', updateHeight);
-    }
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -209,16 +195,14 @@ export default function Mission() {
                 <span>{data.length.toString().padStart(2, '0')}</span>
               </div>
               {/* Image (desktop ref for height) */}
-              <div ref={imageRef} className="w-full xl:w-1/2 py-0 px-0">
+              <div ref={imageRef} className="w-[734.14px] h-[492.59px] py-0 px-0">
                 <img src="/mission.png" alt="Mission" className="w-full h-auto rounded-[24px]" />
               </div>
             </div>
 
             {/* Stakeholder Cards */}
-            {/* <div className="xl:hidden" style={{ height: imageHeight > 0 ? `${imageHeight}px` : undefined }} /> */}
             <div
-              style={{ marginTop: window.innerWidth >= 1280 ? -imageHeight : 0 }}
-              className="flex flex-col justify-center items-start px-[10px] xl:px-0 xl:gap-0 gap-[16px] xl:mt-0">
+              className="flex flex-col justify-center items-start px-[10px] xl:px-0 xl:gap-0 gap-[16px] mt-0 xl:mt-[-492.59px]">
               { data.map((item) => (
                 <div 
                   key={item.id}
