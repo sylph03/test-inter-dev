@@ -256,7 +256,7 @@ export default function Invesment() {
   ]
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(true); // trạng thái auto play
+  const [autoPlay, setAutoPlay] = useState(true);
 
 
   // Auto play (3 giây đổi 1 slide)
