@@ -69,26 +69,17 @@ export default function Mission() {
   const [imageHeight, setImageHeight] = useState(0);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
-  const [marginTop, setMarginTop] = useState(0);
-
   useEffect(() => {
-    const updateHeightAndMargin = () => {
-      if (imageRef.current) {
-        const height = imageRef.current.clientHeight;
-        setImageHeight(height);
-  
-        if (window.innerWidth >= 1280 && height > 0) {
-          setMarginTop(-height);
-        } else {
-          setMarginTop(0);
-        }
-      }
-    };
-  
-    updateHeightAndMargin();
-  
-    window.addEventListener('resize', updateHeightAndMargin);
-    return () => window.removeEventListener('resize', updateHeightAndMargin);
+    if (imageRef.current) {
+      const updateHeight = () => {
+        setImageHeight(imageRef.current.clientHeight);
+      };
+      
+      updateHeight();
+      window.addEventListener('resize', updateHeight);
+      
+      return () => window.removeEventListener('resize', updateHeight);
+    }
   }, []);
 
   useEffect(() => {
@@ -226,7 +217,7 @@ export default function Mission() {
             {/* Stakeholder Cards */}
             {/* <div className="xl:hidden" style={{ height: imageHeight > 0 ? `${imageHeight}px` : undefined }} /> */}
             <div
-              style={{ marginTop: marginTop }}
+              style={{ marginTop: window.innerWidth >= 1280 ? -imageHeight : 0 }}
               className="flex flex-col justify-center items-start px-[10px] xl:px-0 xl:gap-0 gap-[16px] xl:mt-0">
               { data.map((item) => (
                 <div 
