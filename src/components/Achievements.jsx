@@ -4,7 +4,7 @@ export default function Achievements() {
     {
       id: 1,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" fill="none">
           <circle cx="19" cy="19.5" r="19" fill="#ED1B2F"/>
           <path d="M24.8758 60.7363L9 73.838L28 98.2188L29.5136 96.8419C34.2777 92.5085 40.4863 90.1071 46.9264 90.1071H59.9146C67.5417 90.1071 74.8641 87.1141 80.3074 81.7716L96.1447 66.2276C99.0734 63.3531 99.0734 58.6348 96.1447 55.7603C93.2924 52.9608 88.7236 52.9608 85.8712 55.7603L75.61 65.8316C71.4999 69.8655 65.971 72.1255 60.212 72.1255H48.3882C47.8351 72.1255 47.3867 71.6771 47.3867 71.1239C47.3867 70.5708 47.8351 70.1224 48.3882 70.1224H63.6477C67.1945 70.1224 70.0698 67.2472 70.0698 63.7004C70.0698 60.1536 67.1945 57.2784 63.6478 57.2784H34.4984C30.9866 57.2784 27.5843 58.501 24.8758 60.7363Z" stroke="#2A2B6B" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M52.1048 48.9283C52.7711 37.8273 61.383 15.6167 90.5002 15.5818C89.686 29.1498 80.8671 54.8143 52.1048 48.9283Z" fill="#2A2B6B" stroke="#2A2B6B" stroke-width="3.88214"/>
@@ -18,7 +18,7 @@ export default function Achievements() {
     {
       id: 2,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="95" height="87" viewBox="0 0 95 87" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 87" fill="none">
           <circle cx="19" cy="19.5" r="19" fill="#ED1B2F"/>
           <path d="M41 37.5C50.0386 45.592 51.6433 70.205 51.3158 81.5C51.3158 71.8908 54.8526 52.6724 69 52.6724" stroke="#2A2B6B" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M60.0374 55.6742C59.5284 48.9187 64.0082 37.3378 86 45.0584C85.3214 50.0447 80.8078 60.114 68.1829 60.5" stroke="#2A2B6B" stroke-width="3.84" stroke-linecap="round"/>
@@ -32,7 +32,7 @@ export default function Achievements() {
     {
       id: 3,
       icon: (
-        <svg width="95" height="99" viewBox="0 0 95 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 95 99" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="19" cy="19.5" r="19" fill="#ED1B2F"/>
           <path d="M51.5494 88.0655C52.2072 77.1067 60.7089 55.1804 89.4532 55.146C88.6494 68.5403 79.9434 93.8761 51.5494 88.0655Z" fill="#2A2B6B" stroke="#2A2B6B" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M51.0209 88.0655C50.3631 77.1067 41.8615 55.1804 13.1171 55.146C13.9209 68.5403 22.6269 93.8761 51.0209 88.0655Z" stroke="#2A2B6B" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"/>
@@ -48,7 +48,7 @@ export default function Achievements() {
     {
       id: 4,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="95" height="87" viewBox="0 0 95 87" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 87" fill="none">
           <circle cx="19" cy="19.5" r="19" fill="#ED1B2F"/>
           <path d="M77 5.5H39.7203C39.2547 5.5 38.8038 5.6624 38.4451 5.95921L25.2249 16.9001C24.7658 17.2801 24.5 17.845 24.5 18.4409V79C24.5 80.1046 25.3954 81 26.5 81H77C78.1046 81 79 80.1046 79 79V7.5C79 6.39543 78.1046 5.5 77 5.5Z" stroke="#2A2B6B" stroke-width="3"/>
           <path d="M36 81.1562L27 81.1562C25.533 81.1562 24.3438 79.967 24.3438 78.5L24.3438 69.5C24.3438 67.9182 25.5673 67.0157 26.6504 67.2754C27.4475 67.4665 28.2304 67.72 28.9912 68.0352C30.8907 68.822 32.6165 69.9759 34.0703 71.4297C35.5241 72.8835 36.678 74.6093 37.4648 76.5088C37.78 77.2696 38.0335 78.0525 38.2246 78.8496C38.4843 79.9327 37.5818 81.1562 36 81.1562Z" fill="#2A2B6B" stroke="#2A2B6B" stroke-width="2.68752"/>
@@ -67,7 +67,7 @@ export default function Achievements() {
     {
       id: 5,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="95" height="87" viewBox="0 0 95 87" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 87" fill="none">
           <circle cx="19" cy="19.5" r="19" fill="#ED1B2F"/>
           <mask id="path-2-inside-1_14164_3733" fill="white">
             <rect x="24" y="32.5" width="19" height="51" rx="2"/>
@@ -88,52 +88,57 @@ export default function Achievements() {
 
   return (
     <section>
-      <div className="relative w-full h-full mt-[51px]">
-        <div className="absolute left-[-347px] top-1/3 w-[786px] h-[786px] rounded-[786px] opacity-2 bg-[linear-gradient(180deg,#2A2B6B_0%,rgba(42,43,107,0.00)_18.58%)]"></div>
+      <div className="relative w-full h-full mt-[51px] mb-[73px] xl:mb-0">
+        <div className="hidden xl:block absolute left-[-347px] top-1/3 w-[786px] h-[786px] rounded-[786px] opacity-2 bg-[linear-gradient(180deg,#2A2B6B_0%,rgba(42,43,107,0.00)_18.58%)]"></div>
 
         <div className="grid grid-cols-1 xl:grid-cols-2">
           {/* Left */}
-          <div className="sticky top-[277px] h-[244px] w-full">
-            <div className="h-full w-full pl-[100px]">
-              <div className="flex flex-col items-start gap-[7px]">
+          <div className="xl:sticky top-2.5 xl:top-[277px] xl:h-[364px] w-full">
+            <div className="h-full w-full px-2.5 py-8 xl:pl-[100px] z-10">
+              <div className="flex flex-col items-start gap-[7px] mb-4 xl:mb-[19px]">
                 <div className="flex items-center gap-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
                     <circle cx="3" cy="3.5" r="3" fill="#165BB8"/>
                   </svg>
-                  <div className="font-inter text-[#165BB8] text-base not-italic font-semibold leading-6 tracking-[-0.16px]">TỪNG BƯỚC PHÁT TRIỂN</div>
+                  <div className="font-inter text-[#165BB8] text-sm xl:text-base not-italic font-bold xl:font-semibold leading-[16.8px] xl:leading-6 tracking-[-0.14px] xl:tracking-[-0.16px] uppercase">TỪNG BƯỚC PHÁT TRIỂN</div>
                 </div>
-                <h1 className="text-[88px] not-italic font-bold leading-[105.6px] tracking-[-3.52px] bg-gradient-to-r from-[#328AE2] to-[#FF0D39] bg-clip-text text-transparent">Dấu ấn Ami&M</h1>
+                <h1 className="text-[32px] xl:text-[88px] not-italic font-bold leading-[38.4px] xl:leading-[105.6px] tracking-[-1.28px] xl:tracking-[-3.52px] bg-gradient-to-r from-[#328AE2] to-[#FF0D39] bg-clip-text text-transparent">Dấu ấn Ami&M</h1>
               </div>
-              <p className="w-[527px] font-inter text-[#333] text-lg not-italic font-medium leading-[27px] tracking-[-0.36px]">
+              <p className="w-[308.311px] xl:w-[527px] font-inter text-[#333] text-lg not-italic font-medium leading-[27px] tracking-[-0.36px]">
                 Những con số chỉ là một phần của câu chuyện, ý nghĩa thực sự là những dấu ấn sâu đậm về sự đổi mới, trách nhiệm xã hội và sự tin cậy từ những Người đồng hành.
               </p>
             </div>
           </div>
           {/* right */}
           <div className="relative overflow-hidden flex flex-col">
-            <div className="absolute top-1/3 right-[-367px] w-[786px] h-[786px] rounded-[786px] opacity-2 bg-[linear-gradient(180deg,#2A2B6B_0%,rgba(42,43,107,0.00)_18.58%)]"></div>
+            <div className="hidden xl:block absolute top-1/3 right-[-367px] w-[786px] h-[786px] rounded-[786px] opacity-2 bg-[linear-gradient(180deg,#2A2B6B_0%,rgba(42,43,107,0.00)_18.58%)]"></div>
             {data.map((item) => (
-              <div className="h-[244px] py-[37px] pl-[51px] border border-b-[#EDEDED] border-l-[#EDEDED]">
-                <div className="inline-flex justify-center items-center gap-[62px]">
+              <div className="xl:h-[244px] p-6 xl:py-[37px] xl:pl-[51px] xl:border border-b-[#EDEDED] border-l-[#EDEDED]">
+                <div className="inline-flex justify-center items-center gap-4 xl:gap-[62px]">
                   {/* icon */}
                   <div className="relative">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="170" height="171" viewBox="0 0 170 171" fill="none">
+                    <svg className="w-[80px] xl:x-[170px] h-[80px] xl:h-[170px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 171" fill="none">
                       <circle cx="85" cy="85.5" r="85" fill="#FBFBFB"/>
                     </svg>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40px] xl:w-[86px] h-[40px] xl:h-[86px]">
                       {item.icon}
                     </div>
                   </div>
                   {/* content */}
-                  <div className="group flex pt-[0.125px] pr-[3px] pb-[19px] pl-0 flex-col items-start gap-[1.875px]">
-                    <div className="relative text-[#2A2B6B] font-inter text-[68px] not-italic leading-[89.08px] tracking-[-0.68px]">
-                      <span className="font-extrabold text-transparent bg-clip-text bg-[linear-gradient(87deg,#328AE2_13.81%,#FF0D39_128.44%)] transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 absolute inset-0 pointer-events-none z-10">
-                        <span className="font-extrabold">{item.number}</span>
+                  <div className="group flex xl:pt-[0.125px] xl:pr-[3px] xl:pb-[19px] pl-0 flex-col items-start gap-1 xl:gap-[1.875px]">
+                    {/* number */}
+                    <div className="relative text-[#2A2B6B] font-inter text-[32px] xl:text-[68px] not-italic leading-[41.92px] xl:leading-[89.08px] tracking-[-0.32px] xl:tracking-[-0.68px]">
+                      <span className="font-extrabold text-transparent bg-clip-text bg-[linear-gradient(87deg,#328AE2_13.81%,#FF0D39_128.44%)] transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 absolute inset-0 pointer-events-none z-1">
+                        <span className="font-bold xl:font-extrabold">{item.number}</span>
                         <span className="font-semibold"> {item.unit}</span>
                       </span>
-                      <span className="font-extrabold">{item.number}</span>
+                      <span className="font-bold xl:font-extrabold">{item.number}</span>
                       <span className="font-semibold"> {item.unit}</span>
                     </div>
+                    {/* text */}
+                    <p className="font-inter text-[#646464] text-sm xl:text-xl not-italic font-medium xl:font-semibold leading-[21px] xl:leading-7 tracking-[-0.14px] xl:tracking-[-0.2px]">
+                      {item.text}
+                    </p>
                   </div>
                 </div>
               </div>
