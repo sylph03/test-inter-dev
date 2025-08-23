@@ -72,32 +72,23 @@ export default function Mission() {
   const [marginTop, setMarginTop] = useState(0);
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1280 && imageHeight > 0) {
-        setMarginTop(-imageHeight);
-      } else {
-        setMarginTop(0);
+    const updateHeightAndMargin = () => {
+      if (imageRef.current) {
+        const height = imageRef.current.clientHeight;
+        setImageHeight(height);
+  
+        if (window.innerWidth >= 1280 && height > 0) {
+          setMarginTop(-height);
+        } else {
+          setMarginTop(0);
+        }
       }
     };
   
-    handleResize();
-    window.addEventListener('resize', handleResize);
+    updateHeightAndMargin();
   
-    return () => window.removeEventListener('resize', handleResize);
-  }, [imageHeight]);
-  
-
-  useEffect(() => {
-    if (imageRef.current) {
-      const updateHeight = () => {
-        setImageHeight(imageRef.current.clientHeight);
-      };
-      
-      updateHeight();
-      window.addEventListener('resize', updateHeight);
-      
-      return () => window.removeEventListener('resize', updateHeight);
-    }
+    window.addEventListener('resize', updateHeightAndMargin);
+    return () => window.removeEventListener('resize', updateHeightAndMargin);
   }, []);
 
   useEffect(() => {
